@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yet Another Chart</title>
+	<link rel="icon" type="image/x-icon" href="images/star_red.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" src="js/load_index.js" defer="true"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <!--  NAVIGATION BAR -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">电影榜单</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input id="name" type="text" class="form-control" placeholder="你最喜欢哪部电影 ... "/>
+                            </div>
+                            <button type="button" class="btn btn-default" onclick="searchClick()">查询</button>
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- SLOGAN FINISHED -->
+            <div class="jumbotron">
+                <h2>
+                    <b>每周更新！</b>
+                </h2>
+                <p>
+                    最全面的电影！最精彩的排行榜！只有你想不到，没有你搜不到！（狗头)
+                </p>
+
+            </div>
+
+            <!-- MOVIE TABLE FINISHED -->
+            <table class="table">
+                <tbody id="movieTable">
+                </tbody>
+            </table>
+
+            <div class="row clearfix">
+                <div class="col-md-9 column">
+                    <!-- PAGINATION FINISHED-->
+                    <div align="center">
+                        <ul class="pagination pagination-sm">
+                            <li>
+                                <a id="prev" onclick="prevClick()">Prev</a>
+                            </li>
+                            <li>
+                                <a id="page1" href=""></a>
+                            </li>
+                            <li>
+                                <a id="page2" href=""></a>
+                            </li>
+                            <li>
+                                <a id="page3" href=""></a>
+                            </li>
+                            <li>
+                                <a id="page4" href=""></a>
+                            </li>
+                            <li>
+                                <a id="page5" href=""></a>
+                            </li>
+                            <li>
+                                <a id="page6" href=""></a>
+                            </li>
+                            <li>
+                                <a id="page7" href=""></a>
+                            </li>
+                            <li>
+                                <a id="page8" href=""></a>
+                            </li>
+                            <li>
+                                <a id="page9" href=""></a>
+                            </li>
+                            <li>
+                                <a id="page10" href=""></a>
+                            </li>
+                            <li>
+                                <a id="next" onclick="nextClick()">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 column" style="height: 72px">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input id="page_goto" type="text" style="width: 80px;height: 28px;" class="form-control" placeholder="共500页"/>
+                        </div>
+                        <button type="button" class="btn btn-default" onclick="pageGoto()">转到</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <!-- PROMO FOOTER FINISHED -->
+    <div class="row clearfix">
+        <div class="col-md-4 column">
+            <h2>
+                人性污点
+            </h2>
+            <p>
+                希尔克（安东尼·霍普金斯AnthonyHopkins饰）是一名大学教授，深受同事和学生们的信赖和喜爱。希尔克有一个美丽贤惠的妻子和三个伶俐可爱的孩子，他的生活堪称人生赢家的典范。然而，在希尔克的内心里隐藏着一个惊人的秘密……
+            </p>
+            <p>
+                <a class="btn" href="MovieDetails.html?id=1300754"><img src="images/poster_1.jpg" alt="人性污点"/></a>
+                <a class="btn" href="MovieDetails.html?id=1300754">查看详情 »</a>
+            </p>
+        </div>
+        <div class="col-md-4 column">
+            <h2>
+                马钱
+            </h2>
+            <p>
+                凡杜拉在醫院陰鬱的無境長廊與暗室間遊蕩。他彷彿仍活在1975年，手持康乃馨的革命軍推翻獨裁政權，理應替維德角移工帶來光明的時刻。但是他的親友、隔壁村莊的老婦，以及不停細語摸索過去的女人，歷史的陰影仍持續將他們的生活浸染成無邊的黑色……
+            </p>
+            <p>
+                <a class="btn" href="MovieDetails.html?id=25802713"><img src="images/poster_2.jpg" alt="马钱"/></a>
+                <a class="btn" href="MovieDetails.html?id=25802713">查看详情 »</a>
+            </p>
+        </div>
+        <div class="col-md-4 column">
+            <h2>
+                决战冰河
+            </h2>
+            <p>
+                故事发生在1917年，威尔（麦肯齐·阿斯丁MackenzieAstin饰）过着和父亲杰克（约翰·泰瑞JohnTerry饰）相依为命的生活，不幸的是，意外发生了，杰克失去了生命，留下形单影只的威尔，他不仅要想方设法自己照顾自己，还要想办法照看父亲……
+            </p>
+            <p>
+                <a class="btn" href="MovieDetails.html?id=1296455"><img src="images/poster_3.jpg" alt="金牌制作人" /></a>
+                <a class="btn" href="MovieDetails.html?id=1296455">查看详情 »</a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

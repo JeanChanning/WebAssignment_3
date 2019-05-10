@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Result</title>
+    <link rel="icon" type="image/x-icon" href="images/star_red.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" src="js/search_byname.js" defer="true"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <!--  NAVIGATION BAR -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">电影榜单</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input id="name" type="text" class="form-control" placeholder="你最喜欢哪部电影 ... "/>
+                            </div> <button type="button" class="btn btn-default" onclick="searchClick()">查询</button>
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- SLOGAN FINISHED -->
+            <div id="searchresult" class="jumbotron">
+            </div>
+
+            <!-- MOVIE TABLE FINISHED -->
+            <table class="table">
+                <tbody id="movieTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

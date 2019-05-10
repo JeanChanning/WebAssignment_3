@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	-moz-transition-property:background-color;
+ 	-moz-transition-duration: 0.20s;
+ 	-moz-transition-timing-function: linear;
+
+ 	-webkit-transition-property:background-color;
+ 	-webkit-transition-duration: 0.20s;
+ 	-webkit-transition-timing-function: linear;
+
+ 	-o-transition-property:background-color;
+ 	-o-transition-duration: 0.20s;
+ 	-o-transition-timing-function: linear;
+
+	transition-property:background-color;
+	transition-duration: 0.20s;
+	transition-timing-function: linear;
+}
+
+body {
+	font-family:  "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.2em;
+	background-color: #f3f3f3;
+	background-image: url(../images/grunge_wall.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: 0px 0px;
+	color: #444;
+	height: 100%;
+	width: auto;
+}
+
+h3 {font-size: 40px}
+h4 {font-size: 25px}
+dd {font-size: 20px}
+
+a{
+	font-size: 25px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.hr0{ height:1px;border:none;border-top:1px dashed #0066CC;}
+.hr1{ height:1px;border:none;border-top:1px solid #555555;}
+.hr2{ height:3px;border:none;border-top:3px double red;}
+.hr3{ height:5px;border:none;border-top:5px ridge green;}
+.hr4{ height:10px;border:none;border-top:10px groove skyblue;}
+
+#bg{
+	width: 60px;
+	height: 16px;
+	vertical-align: middle;
+	background: url("../images/star_gray.png");
+}
+#over{
+	height:16px;
+	background:url("../images/star_org.png") no-repeat;
+}
